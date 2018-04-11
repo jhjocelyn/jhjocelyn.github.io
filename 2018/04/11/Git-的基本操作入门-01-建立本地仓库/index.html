@@ -20,7 +20,7 @@
 </ol>
 <p><img src="init.png" alt="init"></p>
 <p><strong>意思是：我要给文件建立git仓库啦</strong></p>
-<p><2> 查看此刻文件状态<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></2></p>
+<p><2> 查看此刻文件状态<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure></2></p>
 <p><img src="status.png" alt="status"></p>
 <p> 此刻，提示告诉我们文件index.html还没被放入仓库。<br>后文第二部分有详细介绍这些术语的含义，暂时不用担心看不懂untracked。</p>
 <p> 这个命令你可以随时用，多次用。<br> <strong>意思是：我要看看此刻文件夹里文件们的状态，它们是被确认记录(committed)好了呢，还是暂时存着(staged)等我确认呢，还是有修改的了但我还没确认(modified)。</strong><br> 根据这条命令后的状态反馈，我们可以决定下一步该做什么。</p>
@@ -35,7 +35,7 @@
 <ol start="4">
 <li>完成了上述一些列操作，可以查看所有commits</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git log</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git log</span><br></pre></td></tr></table></figure>
 <p><strong>可以看到所有的commits 记录。最新的commit在最上边。</strong></p>
 <hr>
 <p></p><h5><font color="#804000"> 来，了解下文件的不同状态！</font></h5><br>如果每次输入git status后终端返回的一大堆术语让你头疼，那么我们就来了解一下这些术语的意思。<p></p>
