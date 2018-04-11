@@ -8,8 +8,10 @@
 <p><strong>为Git的可爱举个栗子</strong>🌰：<br>协作的笨办法是大家写完代码在qq上互相发送压缩文件😂。Git提供的解决方案就是，大家各自写好，然后一起<strong>推送(push)</strong>到远程仓库去。然后通过<strong>融合分支(merge branch)</strong>把代码安全地融合在一起。</p>
 </blockquote>
 <hr>
-<p><strong>来，上手git！</strong></p>
-<p><strong>第一步：为你的项目建立一个本地仓库 </strong><br>1.<storng>为项目建立一个文件夹</storng><br><img src="file.png" alt="new a file"></p>
+<h5>来，上手git！</h5>
+
+<p><strong>第一步：为你的项目建立一个本地仓库 </strong></p>
+<p>1.<storng>为项目建立一个文件夹</storng><br><img src="file.png" alt="new a file"></p>
 <p>小技巧：你可以在终端打cd 然后把要打开的文件拖拽到终端里。😂就不用自己敲路径了。</p>
 <ol start="2">
 <li><strong>从终端打开文件夹</strong></li>
@@ -36,7 +38,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git log</span><br></pre></td></tr></table></figure>
 <p><strong>可以看到所有的commits 记录。最新的commit在最上边。</strong></p>
 <hr>
-<p></p><h4> 来，了解下文件的不同状态！</h4><br>如果每次输入git status后终端返回的一大堆术语让你头疼，那么我们就来了解一下这些术语的意思。<p></p>
+<p></p><h5> 来，了解下文件的不同状态！</h5><br>如果每次输入git status后终端返回的一大堆术语让你头疼，那么我们就来了解一下这些术语的意思。<p></p>
 <p><code>staged</code>:  files are already to be committed</p>
 <p><strong>意思：文件已经添加到仓库了，等待确认。</strong><br>所以下一步，我们需要git commit -m “你的记录语言” 操作</p>
 <p><code>upstaged</code>: files with changes that have not been committed</p>
@@ -45,7 +47,7 @@
 <p><strong>一般新文件会出现这个状态，意思是，还没添加到仓库。</strong><br>所以下一步，我们需要git add ”文件名”</p>
 <p><code>deleted</code>: files have been deleted and is waiting to be removed from Git<br><strong>有些文件被删除了，等待着被移除仓库。</strong><br>所以下一步，我们需要git rm “文件名”</p>
 <hr>
-<p></p><h4> 总结：</h4><p></p>
+<p></p><h5> 总结：</h5><p></p>
 <ul>
 <li>git init //初始化仓库</li>
 <li>git status //查看文件状态</li>
