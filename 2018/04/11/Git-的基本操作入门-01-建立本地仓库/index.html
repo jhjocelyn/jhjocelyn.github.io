@@ -1,4 +1,5 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>Git 的基本操作入门 01 - 建立本地仓库 • Jocelyn's blog</title><meta name="description" content="Git 的基本操作入门 01 - 建立本地仓库 - Hui Jiang"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="https://unpkg.com/nanoreset/nanoreset.min.css"><link rel="stylesheet" href="/css/theme.css"><link rel="search" type="application/opensearchdescription+xml" href="/atom.xml" title="Jocelyn's blog"></head><body><div class="wrap" id="barba-wrapper"><header><h1 class="branding"><a href="/" title="Jocelyn's blog"><img class="logo-image" src="/logo.svg" alt="logo"></a></h1><ul class="nav nav-list"><li class="nav-list-item"><a class="nav-list-link no-barba" href="http://jhjocelyn96.com/home" target="_blank">HOME</a></li><li class="nav-list-item"><a class="nav-list-link no-barba" href="https://github.com/jhjocelyn" target="_blank">GITHUB</a></li></ul></header><div class="barba-container"><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Git 的基本操作入门 01 - 建立本地仓库</h1><div class="post-info"><a></a>2018-04-11</div><div class="post-content"><h2 id="Git-的基本操作入门-01-建立本地仓库"><a href="#Git-的基本操作入门-01-建立本地仓库" class="headerlink" title="Git 的基本操作入门 01 - 建立本地仓库"></a>Git 的基本操作入门 01 - 建立本地仓库</h2><h5 id="这是一个简单粗暴的教程，不深入探究git内部原理，旨在让初学者尽快上手git"><a href="#这是一个简单粗暴的教程，不深入探究git内部原理，旨在让初学者尽快上手git" class="headerlink" title="这是一个简单粗暴的教程，不深入探究git内部原理，旨在让初学者尽快上手git"></a><code>这是一个简单粗暴的教程，不深入探究git内部原理，旨在让初学者尽快上手git</code></h5><p>@(Git 粗暴介绍)</p>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>Git 的基本操作入门 01 - 建立本地仓库 • Jocelyn's blog</title><meta name="description" content="Git 的基本操作入门 01 - 建立本地仓库 - Hui Jiang"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="https://unpkg.com/nanoreset/nanoreset.min.css"><link rel="stylesheet" href="/css/theme.css"><link rel="search" type="application/opensearchdescription+xml" href="/atom.xml" title="Jocelyn's blog"></head><body><div class="wrap" id="barba-wrapper"><header><h1 class="branding"><a href="/" title="Jocelyn's blog"><img class="logo-image" src="/logo.svg" alt="logo"></a></h1><ul class="nav nav-list"><li class="nav-list-item"><a class="nav-list-link no-barba" href="http://jhjocelyn96.com/home" target="_blank">HOME</a></li><li class="nav-list-item"><a class="nav-list-link no-barba" href="https://github.com/jhjocelyn" target="_blank">GITHUB</a></li></ul></header><div class="barba-container"><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Git 的基本操作入门 01 - 建立本地仓库</h1><div class="post-info"><a></a>2018-04-11</div><div class="post-content"><p><code>这是一个简单粗暴的教程，不深入探究git内部原理，旨在让初学者尽快上手git</code></p>
+<p>@(Git 粗暴介绍)</p>
 <blockquote>
 <p> Git 就是一个版本控制系统<strong>(version control system)</strong>。Git 就是记录了我们不同版本的代码,便于我们管理。</p>
 <p> <strong>仓库 (repository) 就是存放代码的地方。</strong> 我们为不同的项目建立不同的仓库。Git里存放的是我们所有的仓库。</p>
@@ -7,7 +8,9 @@
 <p><strong>为Git的可爱举个栗子</strong>🌰：<br>协作的笨办法是大家写完代码在qq上互相发送压缩文件😂。Git提供的解决方案就是，大家各自写好，然后一起<strong>推送(push)</strong>到远程仓库去。然后通过<strong>融合分支(merge branch)</strong>把代码安全地融合在一起。</p>
 </blockquote>
 <hr>
-<h3 id="来，上手git！"><a href="#来，上手git！" class="headerlink" title="来，上手git！"></a>来，上手git！</h3><h4 id="第一步：为你的项目建立一个本地仓库"><a href="#第一步：为你的项目建立一个本地仓库" class="headerlink" title="第一步：为你的项目建立一个本地仓库"></a>第一步：为你的项目建立一个本地仓库</h4><ol>
+<p></p><h2> 来，上手git！<h2><p></p>
+<p></p><h3> 第一步：为你的项目建立一个本地仓库 </h3><p></p>
+<ol>
 <li><strong>为项目建立一个文件夹</strong><br><img src="file.png" alt="new a file"></li>
 </ol>
 <p>小技巧：你可以在终端打cd 然后把要打开的文件拖拽到终端里。😂就不用自己敲路径了。</p>
@@ -36,20 +39,21 @@
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
 <p><strong>可以看到所有的commits 记录。最新的commit在最上边。</strong></p>
 <hr>
-<h3 id="来，了解下文件的不同状态！"><a href="#来，了解下文件的不同状态！" class="headerlink" title="来，了解下文件的不同状态！"></a>来，了解下文件的不同状态！</h3><p>如果每次输入git status后终端返回的一大堆术语让你头疼，那么我们就来了解一下这些术语的意思。</p>
+<p></p><h2> 来，了解下文件的不同状态！</h2><br>如果每次输入git status后终端返回的一大堆术语让你头疼，那么我们就来了解一下这些术语的意思。<p></p>
 <p><code>staged</code>:  files are already to be committed<br><strong>意思：文件已经添加到仓库了，等待确认。</strong><br>所以下一步，我们需要git commit -m “你的记录语言” 操作</p>
 <p><code>upstaged</code>: files with changes that have not been committed<br><strong>意思：有些文件修改了，还没确认。</strong><br>所以下一步，我们需要git add “文件名”，先把文件添到仓库，再去确认。</p>
 <p><code>untracked</code>: files are not tracked by Git yet. (indicates a new file)<br><strong>一般新文件会出现这个状态，意思是，还没添加到仓库。</strong><br>所以下一步，我们需要git add ”文件名”</p>
 <p><code>deleted</code>: files have been deleted and is waiting to be removed from Git<br><strong>有些文件被删除了，等待着被移除仓库。</strong><br>所以下一步，我们需要git rm “文件名”</p>
 <hr>
-<h5 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h5><ul>
+<p></p><h2> 总结：</h2><p></p>
+<ul>
 <li>git init //初始化仓库</li>
 <li>git status //查看文件状态</li>
 <li>git add “filename” //(加完以后git status查看一下也可以) //把文件加入仓库</li>
 <li>git commit -m “comments”  //确认更改，写好记录。</li>
 </ul>
 <p><strong> 这是我的第一篇技术博客。希望对大家有帮助 😊，我自己也是还是一个小白，还在探索和学习的路上。下一篇博客会讲Git连接远程仓库。</strong></p>
-</div></article></div></main><footer><div class="paginator"><a class="next" href="/2018/03/27/hello-world/">next</a></div><div class="copyright"><p>&copy; 2018 <a href="http://yoursite.com">Jocelyn Jiang</a><br>Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a></p></div></footer></div></div><script>var _gaq = _gaq || [];
+</h2></h2></div></article></div></main><footer><div class="paginator"><a class="next" href="/2018/03/27/hello-world/">next</a></div><div class="copyright"><p>&copy; 2018 <a href="http://yoursite.com">Jocelyn Jiang</a><br>Powered by <a href="https://hexo.io/" rel="noreferrer" target="_blank">Hexo</a></p></div></footer></div></div><script>var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
 _gaq.push(['_trackPageview']);
 
