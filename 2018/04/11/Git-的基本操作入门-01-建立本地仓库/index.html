@@ -1,6 +1,5 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>Git 的基本操作入门 01 - 建立本地仓库 • Jocelyn's blog</title><meta name="description" content="Git 的基本操作入门 01 - 建立本地仓库 - Hui Jiang"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="https://unpkg.com/nanoreset/nanoreset.min.css"><link rel="stylesheet" href="/css/theme.css"><link rel="search" type="application/opensearchdescription+xml" href="/atom.xml" title="Jocelyn's blog"></head><body><div class="wrap" id="barba-wrapper"><header><h1 class="branding"><a href="/" title="Jocelyn's blog"><img class="logo-image" src="/logo.svg" alt="logo"></a></h1><ul class="nav nav-list"><li class="nav-list-item"><a class="nav-list-link no-barba" href="http://jhjocelyn96.com/home" target="_blank">HOME</a></li><li class="nav-list-item"><a class="nav-list-link no-barba" href="https://github.com/jhjocelyn" target="_blank">GITHUB</a></li></ul></header><div class="barba-container"><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Git 的基本操作入门 01 - 建立本地仓库</h1><div class="post-info"><a></a>2018-04-11</div><div class="post-content"><p><strong><font color="#996633">这是一个简单粗暴的教程，不深入探究git内部原理，旨在让初学者尽快上手git</font></strong></p>
-<p></p><h6>Git 粗暴介绍</h6><p></p>
-<blockquote>
+<h6 id="Git-粗暴介绍"><a href="#Git-粗暴介绍" class="headerlink" title="Git 粗暴介绍"></a>Git 粗暴介绍</h6><blockquote>
 <p> Git 就是一个版本控制系统<strong>(version control system)</strong>。Git 就是记录了我们不同版本的代码,便于我们管理。</p>
 <p> <strong>仓库 (repository) 就是存放代码的地方。</strong> 我们为不同的项目建立不同的仓库。Git里存放的是我们所有的仓库。</p>
 <p>我们的代码要不断修改，当我们每次有了较大幅度的改动后，就可以把代码放入仓库中<strong>确认 (commit)</strong>一次。<strong>commit可以理解为：“我确定了，我的代码现在就长这个样子。” </strong></p>
@@ -9,7 +8,7 @@
 </blockquote>
 <hr>
 <p></p><h4> 来，上手git！<h4><p></p>
-<p></p><h5> 第一步：为你的项目建立一个本地仓库 </h5><p></p>
+<p><strong>第一步：为你的项目建立一个本地仓库 </strong></p>
 <ol>
 <li><strong>为项目建立一个文件夹</strong><br><img src="file.png" alt="new a file"></li>
 </ol>
@@ -25,18 +24,18 @@
 <p><img src="status.png" alt="status"></p>
 <p> 此刻，提示告诉我们文件index.html还没被放入仓库。<br>后文第二部分有详细介绍这些术语的含义，暂时不用担心看不懂untracked。</p>
 <p> 这个命令你可以随时用，多次用。<br> <strong>意思是：我要看看此刻文件夹里文件们的状态，它们是被确认记录(committed)好了呢，还是暂时存着(staged)等我确认呢，还是有修改的了但我还没确认(modified)。</strong><br> 根据这条命令后的状态反馈，我们可以决定下一步该做什么。</p>
-<p><3> 添加文件到仓库<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;此处是文件名&gt;</span><br></pre></td></tr></table></figure></3></p>
-<p> 一般我们新建好的文件，还没被添加到仓库去。所以你会看到图上的内容，提示我们添加文件。<br> <strong>小技巧：添加所有文件</strong><br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure></p>
+<p><3> 添加文件到仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;此处是文件名&gt;</span><br></pre></td></tr></table></figure></3></p>
+<p> 一般我们新建好的文件，还没被添加到仓库去。所以你会看到图上的内容，提示我们添加文件。<br> <strong>小技巧：添加所有文件</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add -A</span><br></pre></td></tr></table></figure></p>
 <p><img src="add.png" alt="add"></p>
 <p> <strong>这条命令意思就是：我要把文件添加到仓库了。</strong></p>
-<p><4>终于到了最重要的一步，确认。<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"这里写你本次操作的记录"</span></span><br><span class="line"></span><br><span class="line">//我们是第一次操作所以可以写成如下：</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"initial commits"</span></span><br></pre></td></tr></table></figure></4></p>
+<p><4>终于到了最重要的一步，确认。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;这里写你本次操作的记录&quot;</span><br><span class="line"></span><br><span class="line">//我们是第一次操作所以可以写成如下：</span><br><span class="line"></span><br><span class="line">$ git commit -m &quot;initial commits&quot;</span><br></pre></td></tr></table></figure></4></p>
 <p><img src="commit.png" alt="commit"></p>
 <p> 这条就是确认命令。<br> <strong>此刻意思是：我确定刚刚所添加的文件都需要追踪记录。</strong><br> 对应不同操作，<strong>它的意思就是，我确认我所做的更改。</strong></p>
 <p>####到这一步我们已经为项目建好了本地仓库🎉，并且成功把文件放入了仓库中追踪保存。以后我们修改了文件，git都会记录下来。</p>
 <ol start="4">
 <li>完成了上述一些列操作，可以查看所有commits</li>
 </ol>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git log</span><br></pre></td></tr></table></figure>
 <p><strong>可以看到所有的commits 记录。最新的commit在最上边。</strong></p>
 <hr>
 <p></p><h4> 来，了解下文件的不同状态！</h4><br>如果每次输入git status后终端返回的一大堆术语让你头疼，那么我们就来了解一下这些术语的意思。<p></p>
