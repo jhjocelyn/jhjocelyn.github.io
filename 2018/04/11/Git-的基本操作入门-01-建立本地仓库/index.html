@@ -8,7 +8,7 @@
 </blockquote>
 <hr>
 <h3 id="来，上手git！"><a href="#来，上手git！" class="headerlink" title="来，上手git！"></a>来，上手git！</h3><h4 id="第一步：为你的项目建立一个本地仓库"><a href="#第一步：为你的项目建立一个本地仓库" class="headerlink" title="第一步：为你的项目建立一个本地仓库"></a>第一步：为你的项目建立一个本地仓库</h4><ol>
-<li><strong>为项目建立一个文件夹</strong><br><img src="./Screen Shot 2018-04-11 at 11.57.29.png" alt="Alt text"></li>
+<li><strong>为项目建立一个文件夹</strong><br><img src="https://github.com/jhjocelyn/jhjocelyn.github.io/blob/master/images/file.png" alt="new a file"></li>
 </ol>
 <p>小技巧：你可以在终端打cd 然后把要打开的文件拖拽到终端里。😂就不用自己敲路径了。</p>
 <ol start="2">
@@ -16,18 +16,18 @@
 <li><strong>完成下列操作</strong><br><1> 初始化命令<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
 </1></li>
 </ol>
-<p><img src="./Screen Shot 2018-04-11 at 11.59.55.png" alt="Alt text"></p>
+<p><img src="https://github.com/jhjocelyn/jhjocelyn.github.io/blob/master/images/init.png" alt="init"></p>
 <p><strong>意思是：我要给文件建立git仓库啦</strong></p>
 <p><2> 查看此刻文件状态<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></2></p>
-<p><img src="./Screen Shot 2018-04-11 at 12.01.40.png" alt="Alt text"></p>
+<p><img src="https://github.com/jhjocelyn/jhjocelyn.github.io/blob/master/images/status.png" alt="status"></p>
 <p> 此刻，提示告诉我们文件index.html还没被放入仓库。<br>后文第二部分有详细介绍这些术语的含义，暂时不用担心看不懂untracked。</p>
 <p> 这个命令你可以随时用，多次用。<br> <strong>意思是：我要看看此刻文件夹里文件们的状态，它们是被确认记录(committed)好了呢，还是暂时存着(staged)等我确认呢，还是有修改的了但我还没确认(modified)。</strong><br> 根据这条命令后的状态反馈，我们可以决定下一步该做什么。</p>
 <p><3> 添加文件到仓库<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;此处是文件名&gt;</span><br></pre></td></tr></table></figure></3></p>
 <p> 一般我们新建好的文件，还没被添加到仓库去。所以你会看到图上的内容，提示我们添加文件。<br> <strong>小技巧：添加所有文件</strong><br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br></pre></td></tr></table></figure></p>
-<p><img src="./Screen Shot 2018-04-11 at 12.04.40.png" alt="Alt text"></p>
+<p><img src="https://github.com/jhjocelyn/jhjocelyn.github.io/blob/master/images/add.png" alt="add"></p>
 <p> <strong>这条命令意思就是：我要把文件添加到仓库了。</strong></p>
 <p><4>终于到了最重要的一步，确认。<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"这里写你本次操作的记录"</span></span><br><span class="line"></span><br><span class="line">//我们是第一次操作所以可以写成如下：</span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">"initial commits"</span></span><br></pre></td></tr></table></figure></4></p>
-<p><img src="/Screen Shot 2018-04-11 at 12.05.46.png" alt="Alt text"></p>
+<p><img src="https://github.com/jhjocelyn/jhjocelyn.github.io/blob/master/images/commit.png" alt="commit"></p>
 <p> 这条就是确认命令。<br> <strong>此刻意思是：我确定刚刚所添加的文件都需要追踪记录。</strong><br> 对应不同操作，<strong>它的意思就是，我确认我所做的更改。</strong></p>
 <p>####到这一步我们已经为项目建好了本地仓库🎉，并且成功把文件放入了仓库中追踪保存。以后我们修改了文件，git都会记录下来。</p>
 <ol start="4">
